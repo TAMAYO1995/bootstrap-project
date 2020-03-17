@@ -6,10 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>신입개발자 신건호</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 </head>
 
+<script>
+</script>
+
 <style>
-    .maingrap{
+    .body {
+        /* 상단바로 인한 가려진 컨텐츠 보이게 하기, 바디 초기화 */
+        padding-top:75px; 
+    }
+
+    .homepage{
         /* background-color: red; */
         width: 1020px;
         height: 900px;
@@ -30,12 +39,63 @@
 	    left: 80%;
         font-size:36px;
     }
-    .secondgrap{
+    .aboutpage{
         background-color: lightgray;
         position: absolute;
         top: 950px;
         width:1900px;
+        height: 1000px;
+    }
+    .abouttext{
+        /* background-color: red; */
+        position: absolute;
+        margin-left:850px;
+        top:80px;
+        text-align: center;
+    }
+    .profile{
+        background-color: red;
+        position:absolute;
+        margin-left:300px;
+        top:300px;
+        width: 400px;
+        height: 400px;
+    }
+    .skill{
+        background-color: red; 
+        position: absolute;
+        margin-left:1200px;
+        top:300px;
+        width: 400px;
         height: 500px;
+    }
+    .img{
+        width:150px;   
+    }
+    .IMGcommnet{
+        display: inline;
+        background-color:yellow; 
+        position: absolute;
+        margin-left: 5px;
+        margin-right: 5px;
+        top:70px;
+        width:220px;
+        height: 190px;
+    }
+    .profilecommnet{
+        background-color:green;
+        position: absolute;
+        margin-left:10px;
+        margin-top:20px;
+    }
+    .glyphicon{
+        font-size:20px;
+
+    }
+    .ex1{
+        display: inline;
+        position:relative;
+        margin-left: 5px;
     }
 </style>
 
@@ -59,16 +119,16 @@
                     <div class="collapse navbar-collapse" id="nav_menu">
                         <ul class="nav navbar-nav">
                             <li>
-                                <a href="">HOME</a>
+                                <a href="#home">HOME</a>
                             </li>
                             <li>
-                                <a href="">ABOUT</a>
+                                <a href="#about">ABOUT</a>
                             </li>
                             <li>
-                                <a href="">PORTFOLIO</a>
+                                <a href="#portfolio">PORTFOLIO</a>
                             </li>
                             <li>
-                                <a href="">CONTACT</a>
+                                <a href="#contact">CONTACT</a>
                             </li>
                         </ul>
                     </div>
@@ -78,14 +138,44 @@
     </header>
 
     <section>
-        <div class="maingrap">
-            <div class="mainimg"><img src="./main.PNG" alt="mainIMG"></div>
+        <a name="home"></a>
+        <div class="homepage">
+            <div class="mainimg"><img src="./main.PNG" alt="mainIMG"></a></div>
             <div class="tamayo-text">
                 <p>GeonHo Shin</p>
             </div>
         </div>
 
-        <div class="secondgrap">
+            
+        <div class="aboutpage"><a name="about"></a>
+            <div class="abouttext">
+                <h1 style="color:darkcyan">ABOUT</h1>
+            </div>
+
+            <div class="profile">
+                <h2>Profile</h2>
+                    <div class="img1">
+                        <img class="img" src="./증명사진.jpg" alt="증명사진">
+                        <div class="IMGcommnet">
+                            <h3>신건호</h5>
+                            <h5>웹 개발자[신입]</h5>
+                            <br>
+                            <h5>95.12.03</h5>
+                            <h5>010-9256-6649</h5>
+                            <h5>uiopzx123@naver.com</h5>
+                        </div>
+                    </div>
+                    <div class="profilecommnet">
+                        <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"><h4 class="ex1">밝고 활발한 성격으로 분위기 메이커</h4></span>
+                        <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"><h4 class="ex1">업무에 있어서는 신중한 태도</h4></span>
+                        <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"><h4 class="ex1">적극적으로 배우는 자세</h4></span>
+                        <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"><h4 class="ex1">실패를 두려워 하지 않는 도전정신</h4></span>
+                    </div>
+            </div>
+
+            <div class="skill">
+                <h2>Skill</h2>
+            </div>
         </div>
     </section>
 </body>
