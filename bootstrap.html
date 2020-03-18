@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>신입개발자 신건호</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!-- 부트스트랩 -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> <!-- 자바스크립트 -->
+    <script src="https://kit.fontawesome.com/3ecfd8096c.js" crossorigin="anonymous"></script> <!-- 폰트어썸 -->
 </head>
 
 <script>
@@ -40,13 +41,27 @@
         font-size:36px;
     }
     .aboutpage{
-        background-color: lightgray;
+        background-color: whitesmoke;
         position: absolute;
         top: 950px;
         width:1900px;
+        height: 1050px;
+    }
+    .portfoliopage{
+        background-color: white;
+        position: absolute;
+        top: 2000px;
+        width:1900px;
         height: 1000px;
     }
-    .abouttext{
+    .contactpage{
+        background-color: lightgray;
+        position: absolute;
+        top: 3000px;
+        width:1900px;
+        height: 300px;
+    }
+    .abouttext , .portfoliotext , .contacttext{
         /* background-color: red; */
         position: absolute;
         margin-left:850px;
@@ -76,17 +91,18 @@
         display: inline;
         background-color:yellow; 
         position: absolute;
-        margin-left: 5px;
+        margin-left: 10px;
         margin-right: 5px;
-        top:70px;
+        top:55px;
         width:220px;
-        height: 190px;
+        height:200px;
     }
     .profilecommnet{
         background-color:green;
         position: absolute;
         margin-left:10px;
         margin-top:20px;
+        padding-left: 20px;
     }
     .glyphicon{
         font-size:20px;
@@ -96,6 +112,25 @@
         display: inline;
         position:relative;
         margin-left: 5px;
+    }
+    .education{
+        background-color: red;
+        position:absolute;
+        width: 500px;
+        height: 200px;
+        top:800px;
+        margin-left:300px;
+    }
+    .edu1{
+        display: inline;
+        background-color: darkcyan;
+        position:absolute;
+    }
+    .edu2{
+        display: inline;
+        background-color: yellow;
+        position:absolute;
+        margin-left: 250px;
     }
 </style>
 
@@ -159,24 +194,68 @@
                         <div class="IMGcommnet">
                             <h3>신건호</h5>
                             <h5>웹 개발자[신입]</h5>
-                            <br>
-                            <h5>95.12.03</h5>
-                            <h5>010-9256-6649</h5>
-                            <h5>uiopzx123@naver.com</h5>
+                            <BR>
+                                <h5>1995.12.03</h5>
+                                <h5>010-9256-6649</h5>
+                                <h5>uiopzx123@naver.com</h5>
+                                <h5>육군 최전방 통신병 만기전역</h5>
                         </div>
                     </div>
                     <div class="profilecommnet">
-                        <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"><h4 class="ex1">밝고 활발한 성격으로 분위기 메이커</h4></span>
-                        <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"><h4 class="ex1">업무에 있어서는 신중한 태도</h4></span>
-                        <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"><h4 class="ex1">적극적으로 배우는 자세</h4></span>
-                        <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"><h4 class="ex1">실패를 두려워 하지 않는 도전정신</h4></span>
+                        <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span><h4 class="ex1">밝고 활발한 성격으로 분위기 메이커</h4>
+                        <br>
+                        <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span><h4 class="ex1">업무에 있어서는 신중한 태도</h4>
+                        <br>
+                        <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span><h4 class="ex1">적극적으로 배우는 자세</h4>
+                        <br>
+                        <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span><h4 class="ex1">실패를 두려워 하지 않는 도전정신</h4>
+                    </div>
+            </div>
+
+            <div class="education">
+                <h2>Education <i class="fas fa-graduation-cap"></i> </h2>
+                    <div class=""educomment>
+                        <br>
+                        <div class="edu1"> 인하공업전문대학교 <br> 컴퓨터정보학과 전공(전문학사취득) <br><br>  2014.02 ~ 2020.03 </div>
+
+                        <div class="edu2"> 국가평생교육진흥원 <br> 학점은행제(학사학위취득) <br><br> 2020.03 ~ 2021.3</div>
                     </div>
             </div>
 
             <div class="skill">
-                <h2>Skill</h2>
+                <h3>Skill</h3>
+                <br>
+            
+                <div class="skillcomment">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><h4 class="ex1">HTML5, CSS3 웹 표준 마크업</h4>
+                    <br><br>
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><h4 class="ex1">웹 접근성 준수</h4>
+                    <br><br>
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><h4 class="ex1">반응형/적응형 제작</h4>
+                    <br><br>
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><h4 class="ex1">jQuery 플러그인 활용</h4>
+                    <br><br>
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><h4 class="ex1">Javascript 이해와 활용</h4>
+                    <br><br>
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><h4 class="ex1">GitHub 오픈소스 활용</h4>
+                    <br><br>
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><h4 class="ex1">커뮤니케이션 능력</h4>
+                </div>
             </div>
         </div>
+
+    <div class="portfoliopage"><a name="portfolio"></a>
+        <div class="portfoliotext">
+            <h1 style="color:darkcyan">Portfolio</h1>
+        </div>
+    </div>
+
+    <div class="contactpage"><a name="contact"></a>
+        <div class="contacttext">
+            <h1 style="color:darkcyan">contact</h1>
+        </div>
+    </div>
+
     </section>
 </body>
 </html>
