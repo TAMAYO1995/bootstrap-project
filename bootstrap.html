@@ -30,14 +30,13 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        left:400px;
     }
     .tamayo-text{
         padding: 5px 10px;
 	    text-align: center;
 	    position: absolute;
-	    top: 60%;
-	    left: 80%;
+	    top: 40%;
+	    left: 65%;
         font-size:36px;
     }
     .aboutpage{
@@ -132,9 +131,30 @@
         position:absolute;
         margin-left: 250px;
     }
+    .anibox{
+        color:whitesmoke;
+    }
     .textdeco{
         text-decoration: underline;
         color:darkcyan;
+    }
+    .first-animation{
+        color:whitesmoke;
+        font-size: 80px;
+        animation-name: slidein;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes slidein{
+        from {
+            margin-left:80px;
+            width:200%;
+        }
+        to {
+            margin-left: 0%;
+            width:50%;
+        }
     }
 </style>
 
@@ -181,6 +201,9 @@
         <div class="homepage">
             <div class="mainimg"><img src="./main.PNG" alt="mainIMG"></a></div>
             <div class="tamayo-text">
+                <div class="anibox">
+                    <P class="first-animation">WebDeveloper</P>
+                </div>
                 <p>GeonHo Shin</p>
             </div>
         </div>
