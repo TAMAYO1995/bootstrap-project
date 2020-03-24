@@ -80,7 +80,14 @@
         position: absolute;
         top: 3000px;
         width:1900px;
-        height: 300px;
+        height: 450px;
+    }
+    .endCommnet{
+        background-color: gray;
+        position: absolute;
+        top: 3450px;
+        width:1900px;
+        height: 120px;
     }
     .abouttext , .portfoliotext , .contacttext{
         /* background-color: red; */
@@ -153,6 +160,7 @@
         position:absolute;
         margin-left: 250px;
     }
+    
     .anibox{
         color:whitesmoke;
     }
@@ -165,6 +173,31 @@
         animation-name: slidein;
         animation-duration: 4s;
         animation-iteration-count: infinite;
+    }
+    .comment{
+        /* background-color: violet; */
+        position: absolute;
+        margin-left: 700px;
+        width: 500px;
+        height: 150px;
+        font-size: 18px;
+        top: 50%;
+        font-style: initial;
+    }
+    .copyright{
+        line-height: 110px;
+        text-align: center;
+        font-size:24px;
+    }
+    .contactimg1{
+        /* background-color:red; */
+        position: absolute;
+        margin-left: 50px;
+    }
+    .contactimg2{
+        /* background-color: yellow; */
+        position: absolute;
+        margin-left: 300px;
     }
 
     @keyframes slidein{
@@ -197,7 +230,7 @@
     <section>
         <a name="home"></a>
         <div class="homepage">
-            <div><img class="mainimg" src="./main.PNG" alt="mainIMG"></a></div>
+            <div><img class="mainimg" src="./img/main.PNG" alt="mainIMG"></a></div>
             <div class="tamayo-text">
                 <div class="anibox">
                     <P class="first-animation">WebDeveloper</P>
@@ -215,7 +248,7 @@
             <div class="profile">
                 <h2>Profile</h2>
                     <div class="img1">
-                        <img class="img" src="./증명사진.jpg" alt="증명사진">
+                        <img class="img" src="./img/증명사진.jpg" alt="증명사진">
                         <div class="IMGcommnet">
                             <h3>신건호</h5>
                             <h5>웹 개발자[신입]</h5>
@@ -277,12 +310,26 @@
 
     <div class="contactpage"><a name="contact"></a>
         <div class="contacttext">
-            <h1 class="textdeco">contact</h1>
-            
+            <h1 class="textdeco">Contact Us</h1>
         </div>
+                <div class="comment">
+                    <div class="contactimg1">
+                        <img src="./img/phone.png" alt="phoneIMG">
+                        <p>010 - 9256 - 6649</p>
+                    </div>
+                    <div class="contactimg2">
+                        <img src="./img/email.png" alt="emailIMG">
+                        <p>uiopzx123@naver.com</p>
+                    </div>
+                </div>
     </div>
-
     </section>
+
+    <footer>
+        <div class="endCommnet">
+            <p class="copyright"><b>Copyright ⓒ 2018 GeonHo Shin All right reserved.</b></p>
+        </div>
+    </footer>
 </body>
 </html>
 

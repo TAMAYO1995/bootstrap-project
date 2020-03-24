@@ -16,6 +16,12 @@ textdeco add
 2. animation add 
 
 Intend...
-1. nav bar change(The shape is not pretty)
+~~ 1. nav bar change(The shape is not pretty) ~~
 2. font add(Font is not applied to the current page)
 3. Must finish animation effect
+
+2020-03-22 
+nav bar,main IMG change
+
+2020-03-24
+contactUs page, footer add
