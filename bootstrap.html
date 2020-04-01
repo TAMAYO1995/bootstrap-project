@@ -29,7 +29,7 @@
     h1{color:white; line-height:35px; float:left;}
     .menu{float: right;}
     .menu li{float:left; font-size: 20px;}
-    .menu a{line-height:75px; color:white; padding:0 15px; display:block;}
+    .menu a{line-height:75px; color:white; padding:0 15px; display:block; text-decoration: none;}
 
     .homepage{
         /* background-color: red; */
@@ -167,6 +167,7 @@
     .textdeco{
         text-decoration: underline;
         color:rgb(35, 131, 131);
+        text-decoration: none;
     }
     .first-animation{
         font-size: 80px;
@@ -220,6 +221,9 @@
         display: inline;
         position: relative;
         margin-left: 0px;
+    }
+    a:hover{
+        color:rgb(105, 147, 238)
     }
 
     @keyframes slidein{
@@ -344,8 +348,8 @@
                         <p class="emailAddress">uiopzx123@naver.com</p>
                     </div>
                     <div class="contactimg3">
-                        <img src="./img/git.png" src="https://github.com/TAMAYO1995" alt="gitIMG">
-                        <p class="git"><a href="https://github.com/TAMAYO1995">TAMAYO1995</a></p>
+                        <a href="https://github.com/TAMAYO1995"><img src="./img/git.png" alt="gitIMG"></a> <!-- a태그안에 img태그-->
+                        <p class="git">TAMAYO1995</p>
                     </div>
                 </div>
     </div>
