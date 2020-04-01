@@ -25,3 +25,6 @@ nav bar,main IMG change
 
 2020-03-24
 contactUs page, footer add
+
+2020-04-01
+메인페이지 에니메이션 수정, 콘텍트 부분 수정 , 깃주소 추가
