@@ -1,21 +1,21 @@
 # bootstrap-project
 
- Personal Homepage Project Using Bootstrap
+ <h1>Personal Homepage Project Using Bootstrap</h1>
 
 <hr/>
 
- 2020-03-04
- navbar commit
+ - 2020-03-04
+ - navbar commit
 
  <hr/>
 
-2020-03-17
-about commit
+- 2020-03-17
+- about commit
 
 <hr/>
 
-2020-03-20
-textdeco add
+- 2020-03-20
+- textdeco add
 
 <hr/>
 
@@ -24,7 +24,7 @@ textdeco add
 2. animation add 
 
 Intend...
-~~ 1. nav bar change(The shape is not pretty) ~~
+1. nav bar change(The shape is not pretty)
 2. font add(Font is not applied to the current page)
 3. Must finish animation effect
 
