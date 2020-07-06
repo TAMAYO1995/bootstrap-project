@@ -10,9 +10,6 @@
     <script src="https://kit.fontawesome.com/3ecfd8096c.js" crossorigin="anonymous"></script> <!-- 폰트어썸 -->
 </head>
 
-<script>
-</script>
-
 <style>
     /*reset */
     *{margin:0; padding:0; }
@@ -20,27 +17,63 @@
     a{text-decoration:none;}
 
     /*common*/
-    .wrapper{width:1170px; margin:0 auto;}
+    .wrapper{
+        width:1170px; 
+        margin:0 auto;
+    }
     .clearfix{content: ''; display:block; clear:both;}
 
     /* header */
-    header{height:75px; background-color: rgb(2, 9, 10); border: 1px solid #253342;
-           position:fixed; width:100%; z-index: 9999; top:0; left:0;}
-    h1{color:white; line-height:35px; float:left;}
+    header{
+        height:75px; 
+        background-color: rgb(2, 9, 10); 
+        border: 1px solid #253342;
+        position:fixed; 
+        width:100%; 
+        z-index: 9999; 
+        top:0; 
+        left:0;
+        background-color: rgba( 255, 255, 255, 0.5 );
+        }
+    h1{
+        color:black;
+        line-height:35px;
+        float:left;}
     .menu{float: right;}
     .menu li{float:left; font-size: 20px;}
-    .menu a{line-height:75px; color:white; padding:0 15px; display:block; text-decoration: none;}
+    .menu a{line-height:75px; color:black; padding:0 15px; display:block; text-decoration: none;}
+
+    /* 로고 왼쪽 정렬 */
+    .left-align{
+        display: inline;
+        position: absolute;
+        left:10%;
+    }
+    .box{
+        display: inline;
+        position: absolute;
+        margin-left: -80px;
+        border-radius: 70%;
+        overflow: hidden;
+        width:70px;
+        height:70px;
+    }
+    .logo{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+    
 
     .homepage{
         /* background-color: red; */
         width: 1020px;
         height: 900px;
-        margin-top: 50px;
         position: absolute;
     }
     .mainimg{
         width: 1900px;
-        height: 1000px;
+        height:1000px;
         /* position: absolute; */
     }
     .tamayo-text{
@@ -165,9 +198,9 @@
         color:whitesmoke;
     }
     .textdeco{
-        text-decoration: underline;
         color:rgb(35, 131, 131);
         text-decoration: none;
+        font-size: 45px;
     }
     .first-animation{
         font-size: 80px;
@@ -221,9 +254,10 @@
         display: inline;
         position: relative;
         margin-left: 0px;
+
     }
     a:hover{
-        color:rgb(105, 147, 238)
+        color:rgb(13, 27, 58)
     }
 
     @keyframes slidein{
@@ -241,7 +275,12 @@
 <body>
     <header>
         <div class="wrapper">
-            <h1>TAMAYO.log</h1>
+            <div class="left-align">
+                <div class="box"><img class="logo" src="./img/logo.jpg" alt="logo"></div>
+                <h1>TAMAYO.log</h1>
+            </div>
+
+
             <nav>
                 <ul class="menu">
                     <li><a href="#home">HOME</a></li>
@@ -341,15 +380,15 @@
                 <div class="comment">
                     <div class="contactimg1">
                         <img src="./img/phone.png" alt="phoneIMG">
-                        <p class="phoneNumber">010-9256-6649</p>
+                        <p class="phoneNumber"><b>010-9256-6649</b></p>
                     </div>
                     <div class="contactimg2">
-                        <img src="./img/email.png" alt="emailIMG">
-                        <p class="emailAddress">uiopzx123@naver.com</p>
+                        <a href="mailto:uiopzx123@naver.com"><img src="./img/email.png" alt="emailIMG"></a>
+                        <p class="emailAddress"><b>uiopzx123@naver.com</b></p>
                     </div>
                     <div class="contactimg3">
                         <a href="https://github.com/TAMAYO1995"><img src="./img/git.png" alt="gitIMG"></a> <!-- a태그안에 img태그-->
-                        <p class="git">TAMAYO1995</p>
+                        <p class="git"> <b>TAMAYO1995</b></p>
                     </div>
                 </div>
     </div>
